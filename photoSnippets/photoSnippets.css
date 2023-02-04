@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    height: 100vh;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(50, 49, 49);
+}
+
+.img_container {
+    width: 330px;
+    height: 450px;
+    position: relative;
+
+}
+
+.img_container img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+
+.img_container:hover #third {
+    border-radius: 50%;
+}
+
+.img_container:hover #first {
+    transform: rotate(-10deg) translate(-200px, -3px) scale(1.1);
+}
+
+.img_container:hover #second {
+    transform: rotate(10deg) translate(200px, -3px) scale(1.1);
+}
